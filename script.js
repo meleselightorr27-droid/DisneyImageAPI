@@ -15,7 +15,8 @@ async function getJoke() {
         const jokeHolder = document.getElementById("jokeHolder")
         //jokeHolder.textContent = json.joke
         //characterHolder.append(document.createElement("br"))
-        
+       
+        jokeHolder.innerHTML = "";
         let img = document.createElement("img");
         img.src = json.data[0].imageUrl;
         img.width = 100;
